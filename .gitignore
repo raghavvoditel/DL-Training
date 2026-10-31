@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# downloaded datasets and trained models (re-created by running the scripts)
+data/
+*.keras
+*.pth
+*.h5

@@ -1,0 +1,45 @@
+C++ is a compiled programming language created by Bjarne Stroustrup in 1985 as an extension of C. It supports procedural, object-oriented and generic programming. C++ code is turned into machine code by a compiler such as g++ or MSVC, which makes it fast.
+
+Every C++ program starts running from the main function. A minimal program is: #include <iostream> followed by int main() { std::cout << "Hello"; return 0; }. The return value 0 tells the operating system that the program finished without errors.
+
+A variable is a named box that stores a value. C++ is statically typed, so every variable has a type that is fixed when you declare it. Common types are int for whole numbers, double for decimal numbers, char for a single character, bool for true or false, and std::string for text.
+
+Input and output use streams from the iostream header. std::cout with the << operator prints to the screen. std::cin with the >> operator reads from the keyboard. std::endl or "\n" moves to a new line.
+
+An if statement runs code only when a condition is true. else runs when it is false. A switch statement picks one of many cases based on the value of an integer or character, and each case usually ends with break.
+
+Loops repeat code. A for loop is used when you know how many times to repeat, for example for (int i = 0; i < 5; i++). A while loop repeats as long as a condition is true. A do-while loop always runs at least once because the condition is checked at the end.
+
+A function is a reusable block of code with a name, parameters and a return type. For example int add(int a, int b) { return a + b; }. A function declared void returns nothing. Function overloading means having several functions with the same name but different parameter lists.
+
+Arguments can be passed by value or by reference. Passing by value copies the argument, so changes inside the function do not affect the caller. Passing by reference, written with &, lets the function change the caller's variable and avoids copying large objects.
+
+An array stores a fixed number of values of the same type in a row, for example int marks[5]. Indexes start at 0. std::vector is a resizable array from the standard library; push_back adds an element and size() returns how many elements it holds.
+
+A pointer is a variable that stores a memory address. int* p = &x; makes p point to x, and *p reads the value at that address (dereferencing). nullptr means the pointer points to nothing. A reference is an alias for an existing variable and cannot be null or reseated.
+
+Memory created with new lives on the heap and must be freed with delete, otherwise the program has a memory leak. Modern C++ prefers smart pointers such as std::unique_ptr and std::shared_ptr, which free memory automatically.
+
+A class is a blueprint that groups data (member variables) and functions (member functions or methods). An object is an instance of a class. Members are private by default in a class and public by default in a struct.
+
+A constructor is a special member function that runs automatically when an object is created and has the same name as the class. A destructor, written with a tilde like ~Car(), runs when the object is destroyed and is used to release resources.
+
+The four pillars of object-oriented programming are encapsulation, abstraction, inheritance and polymorphism. Encapsulation hides data behind public methods. Abstraction shows only the essential features. Inheritance lets a derived class reuse code from a base class. Polymorphism lets one interface have many forms.
+
+Inheritance is written class Dog : public Animal. The derived class Dog gets the public and protected members of the base class Animal. C++ supports multiple inheritance, where a class has more than one base class.
+
+Runtime polymorphism uses virtual functions. When a base class function is marked virtual and a derived class overrides it, calling it through a base class pointer runs the derived version. A pure virtual function, written virtual void draw() = 0;, makes the class abstract so it cannot be instantiated.
+
+Compile-time polymorphism includes function overloading and operator overloading. Operator overloading lets you define what operators like + or == mean for your own classes, for example Point operator+(const Point& other).
+
+Templates let you write generic code that works with any type. template <typename T> T biggest(T a, T b) { return a > b ? a : b; } works for int, double and string. The Standard Template Library (STL) is built on templates.
+
+The STL provides containers, algorithms and iterators. Containers include vector, list, deque, set, map and unordered_map. Algorithms such as std::sort, std::find and std::count work on ranges given by iterators like begin() and end().
+
+Exceptions handle runtime errors. Code that might fail goes inside a try block, throw raises an exception, and catch handles it. For example throw std::runtime_error("bad input"); can be caught with catch (const std::exception& e).
+
+The const keyword makes a value read-only. A const member function promises not to change the object. static members belong to the class itself rather than to each object, so all objects share one copy.
+
+A namespace groups names to avoid clashes. The standard library lives in namespace std, which is why we write std::cout. Writing using namespace std; at the top avoids typing std:: but is discouraged in large projects.
+
+The difference between C and C++: C is procedural only, while C++ adds classes, objects, references, function overloading, templates, exceptions and the STL. C uses malloc and free, while C++ uses new and delete.

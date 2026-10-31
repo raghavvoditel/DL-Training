@@ -1,0 +1,11 @@
+streamlit
+pandas
+numpy
+scikit-learn
+pytest
+tensorflow
+torch
+torchvision
+pillow
+ollama
+pypdf

@@ -1,0 +1,7 @@
+The central library is open from 8:30 am to 9:00 pm on weekdays and from 10:00 am to 5:00 pm on Saturdays. The library is closed on Sundays and public holidays.
+
+Students can borrow up to 4 books at a time using their college ID card. Books are issued for 14 days and can be renewed once if nobody else has reserved them.
+
+The late fine is 5 rupees per book per day after the due date. A lost book must be replaced or paid for at its current price plus a 100 rupee processing charge.
+
+The library has a silent reading hall with 120 seats, a digital section with 30 computers, and free Wi-Fi. Mobile phones must be kept on silent inside the library.
